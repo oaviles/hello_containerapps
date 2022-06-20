@@ -1,6 +1,6 @@
-# DevSquad Microservice Project
+# PoC Azure Container Apps
 
-This is a collection of sample projects for Cloud Application Developer using Azure Cloud Platform. The sample projects are arranged in different topics about microservice development and deployment on Azure Kubernetes Service supported by Secure DevOps Practices.
+This is a collection of sample projects for Cloud Application Developer using Azure Cloud Platform. The sample projects are arranged in different topics about microservice development and deployment on Azure Container Apps supported by Secure DevOps Practices.
 
 Reference architecture:
 [Deploy microservices with Azure Container Apps](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps)
