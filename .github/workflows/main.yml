@@ -9,12 +9,13 @@ env:
   APP_ID: ${{ secrets.CLIENTID }}
   SP_PWD: ${{ secrets.CLIENTSECRET }}
   TENANT_ID: ${{ secrets.TENANTID }}
-  CONTAINER_IMAGE_NAME: acraksworkshop.azurecr.io/oapi:7999
+  CONTAINER_IMAGE_NAME: ${{ secrets.CONTAINER_IMAGE_NAME }}
   REGISTRY_SERVER: ${{ secrets.CONTAINER_REGISTRY }}
   REGISTRY_USERNAME: ${{ secrets.ACR_USERNAME }}
   REGISTRY_PASSWORD: ${{ secrets.ACR_PASSWORD }}
   RESOURCE_GROUP: ${{ secrets.AZURE_RG }}
-  CONTAINERAPPS_ENVIRONMENT: oa-poc-env
+  CONTAINERAPPS_ENVIRONMENT: ${{ secrets.CONTAINERAPPS_ENVIRONMENT }}
+  CONTAINER_APP_NAME: oapiwf
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -38,5 +39,4 @@ jobs:
           azcliversion: 2.30.0
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
-            az acr login --name $REGISTRY_SERVER
-            az containerapp create --name my-container-app --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD
+            az containerapp create --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD --ingress external --target-port 7999 --query properties.configuration.ingress.fqdn --min-replicas 1 --max-replicas 10 --cpu 0.25 --memory 0.5Gi
