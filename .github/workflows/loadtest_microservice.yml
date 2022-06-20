@@ -1,4 +1,4 @@
-name: 5 Load Test Microservice
+name: Load Testing API
 
 # Controls when the workflow will run
 on: workflow_dispatch
@@ -11,7 +11,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   loadTest:
-    name: Load Test Microservice
+    name: Load Test API
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Actions 
