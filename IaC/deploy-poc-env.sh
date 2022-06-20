@@ -15,4 +15,4 @@ az provider register --namespace Microsoft.OperationalInsights
 
 az containerapp env create --name $CONTAINERAPPS_ENVIRONMENT --resource-group $RESOURCE_GROUP --location $LOCATION
 
-az containerapp create --name my-container-app --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD
+az containerapp create --name oa-api --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD
