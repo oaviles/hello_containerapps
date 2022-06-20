@@ -35,4 +35,5 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
+            az config set extension.use_dynamic_install=yes_without_prompt
             az containerapp create --name my-container-app --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD
