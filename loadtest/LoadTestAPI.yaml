@@ -1,0 +1,5 @@
+version: v0.1
+testName: LoadTestAPI
+testPlan: LoadTestAPIPlan.jmx
+description: 'Load Test API Container Apps'
+engineInstances: 1
