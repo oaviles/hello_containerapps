@@ -2,13 +2,9 @@
 
 This is a collection of sample projects for Cloud Application Developer using Azure Cloud Platform. The sample projects are arranged in different topics about microservice development and deployment on Azure Kubernetes Service supported by Secure DevOps Practices.
 
-Deploy Microservice on Azure Kubernetes Service, reference architecture:
-[Deploy microservice on AKS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/aks-microservices)
-![](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks-microservices/images/aks.png)
-
-GitOps for Azure Kubernetes Service, reference architecture:
-[GitOps for AKS](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks)
-![](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/media/gitops-blueprint-aks.svg)
+Reference architecture:
+[Deploy microservices with Azure Container Apps](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/serverless/microservices-with-container-apps)
+![](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/serverless/media/microservices-with-container-apps-deployment.png)
 
 #### Other Resources
 - [Microservices with .NET](https://dotnet.microsoft.com/en-us/apps/aspnet/microservices)
