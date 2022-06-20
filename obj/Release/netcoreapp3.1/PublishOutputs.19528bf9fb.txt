@@ -1,0 +1,9 @@
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/container_sample
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/appsettings.Development.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/appsettings.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/IaC/azuredeploy.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/IaC/azuredeploy.parameters.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/container_sample.dll
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/container_sample.deps.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/container_sample.runtimeconfig.json
+/workspaces/hello_containerapps/bin/Release/netcoreapp3.1/publish/container_sample.pdb

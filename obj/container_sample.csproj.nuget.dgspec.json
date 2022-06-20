@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/webapi/container_sample.csproj": {}
+    "/workspaces/hello_containerapps/container_sample.csproj": {}
   },
   "projects": {
-    "/workspaces/webapi/container_sample.csproj": {
+    "/workspaces/hello_containerapps/container_sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/webapi/container_sample.csproj",
+        "projectUniqueName": "/workspaces/hello_containerapps/container_sample.csproj",
         "projectName": "container_sample",
-        "projectPath": "/workspaces/webapi/container_sample.csproj",
+        "projectPath": "/workspaces/hello_containerapps/container_sample.csproj",
         "packagesPath": "/var/nuget",
-        "outputPath": "/workspaces/webapi/obj/",
+        "outputPath": "/workspaces/hello_containerapps/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -54,7 +54,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.18, 3.1.18]"
+              "version": "[3.1.23, 3.1.23]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/dotnet/5.0.400/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/opt/dotnet/6.0.201/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
