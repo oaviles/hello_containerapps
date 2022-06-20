@@ -1,5 +1,5 @@
 on: workflow_dispatch
-name: Create ACR
+name: 1 Create ACR
 jobs:
   create-acr:
     runs-on: ubuntu-latest
