@@ -14,6 +14,7 @@ env:
   REGISTRY_USERNAME: ${{ secrets.ACR_USERNAME }}
   REGISTRY_PASSWORD: ${{ secrets.ACR_PASSWORD }}
   RESOURCE_GROUP: ${{ secrets.AZURE_RG }}
+  CONTAINERAPPS_ENVIRONMENT: oa-poc-env
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
