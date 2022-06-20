@@ -13,6 +13,7 @@ env:
   REGISTRY_SERVER: ${{ secrets.CONTAINER_REGISTRY }}
   REGISTRY_USERNAME: ${{ secrets.ACR_USERNAME }}
   REGISTRY_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+  RESOURCE_GROUP: ${{ secrets.AZURE_RG }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
