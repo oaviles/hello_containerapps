@@ -1,0 +1,31 @@
+name: Deploy Azure Container App (IaC)
+
+# Controls when the workflow will run
+on: workflow_dispatch
+
+env:
+  APP_ID: ${{ secrets.CLIENTID }}
+  SP_PWD: ${{ secrets.CLIENTSECRET }}
+  TENANT_ID: ${{ secrets.TENANTID }}
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  script-to-deploy-aks:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    environment: PoC
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      - run: |
+          chmod 775 ./IaC/deploy-poc-env.sh
+          ./IaC/deploy-poc-env.sh $APP_ID $SP_PWD $TENANT_ID
+        shell: bash
