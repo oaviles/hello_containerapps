@@ -36,7 +36,6 @@ jobs:
       - name: Azure CLI script
         uses: azure/CLI@v1
         with:
-          azcliversion: 2.30.0
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
             az containerapp create --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP --image $CONTAINER_IMAGE_NAME --environment $CONTAINERAPPS_ENVIRONMENT --registry-server $REGISTRY_SERVER --registry-username $REGISTRY_USERNAME --registry-password $REGISTRY_PASSWORD --ingress external --target-port 7999 --query properties.configuration.ingress.fqdn --min-replicas 1 --max-replicas 10 --cpu 0.25 --memory 0.5Gi
